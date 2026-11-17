@@ -44,7 +44,7 @@ SUMMARY_COLUMNS = [
 GPUS = ["H100 SXM", "H100 PCIe", "H200", "B200", "A100 80GB", "L40S", "RTX 4090", "RTX 5090"]
 OFFERS = ["on-demand", "spot-community", "reserved-capacity-block"]
 TOLERANCE = 1e-6
-SPREAD_TOLERANCE = 0.0005  # spread is rounded to three decimals
+SPREAD_TOLERANCE = 0.0005 + 1e-9  # spread is rounded to three decimals; allow exact half-way values
 
 errors: list[str] = []
 
