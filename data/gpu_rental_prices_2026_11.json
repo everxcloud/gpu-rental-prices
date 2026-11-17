@@ -1,0 +1,677 @@
+[
+  {
+    "provider": "Runpod",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.99,
+    "listing": "Secure Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "H100 PCIe",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 2.89,
+    "listing": "Secure Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 5.29,
+    "listing": "Secure Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "B200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 7.99,
+    "listing": "Secure Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "A100 80GB",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.79,
+    "listing": "Secure Cloud, PCIe and SXM",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "L40S",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.09,
+    "listing": "Secure Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "RTX 4090",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 0.89,
+    "listing": "Secure Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "RTX 5090",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.19,
+    "listing": "Secure Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "H100 SXM",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 2.69,
+    "listing": "Community Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "H100 PCIe",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 1.99,
+    "listing": "Community Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "H200",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 3.59,
+    "listing": "Community Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "B200",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 5.98,
+    "listing": "Community Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "A100 80GB",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 1.19,
+    "listing": "Community Cloud, PCIe",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "L40S",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 0.79,
+    "listing": "Community Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "RTX 4090",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 0.34,
+    "listing": "Community Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Runpod",
+    "gpu": "RTX 5090",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 0.69,
+    "listing": "Community Cloud",
+    "source_url": "https://www.runpod.io/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Lambda",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.99,
+    "listing": "8x instance, per GPU (1x: $4.29)",
+    "source_url": "https://lambda.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Lambda",
+    "gpu": "H100 PCIe",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.29,
+    "listing": "1x instance",
+    "source_url": "https://lambda.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Lambda",
+    "gpu": "B200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 6.69,
+    "listing": "8x instance, per GPU (1x: $6.99)",
+    "source_url": "https://lambda.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Lambda",
+    "gpu": "A100 80GB",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 2.79,
+    "listing": "8x SXM instance, per GPU",
+    "source_url": "https://lambda.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "CoreWeave",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 6.155,
+    "listing": "HGX H100, 8x instance $49.24 / 8, North America",
+    "source_url": "https://www.coreweave.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "CoreWeave",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 6.305,
+    "listing": "HGX H200, 8x instance $50.44 / 8, North America",
+    "source_url": "https://www.coreweave.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "CoreWeave",
+    "gpu": "B200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 8.6,
+    "listing": "HGX B200, 8x instance $68.80 / 8, North America",
+    "source_url": "https://www.coreweave.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "CoreWeave",
+    "gpu": "A100 80GB",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 2.7,
+    "listing": "8x instance $21.60 / 8, North America",
+    "source_url": "https://www.coreweave.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "CoreWeave",
+    "gpu": "L40S",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 2.25,
+    "listing": "8x instance $18.00 / 8, North America",
+    "source_url": "https://www.coreweave.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Together AI",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.99,
+    "listing": "HGX H100 GPU cluster, pay as you go",
+    "source_url": "https://www.together.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Together AI",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 5.99,
+    "listing": "HGX H200 GPU cluster, pay as you go",
+    "source_url": "https://www.together.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Together AI",
+    "gpu": "B200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 8.19,
+    "listing": "HGX B200 GPU cluster, pay as you go",
+    "source_url": "https://www.together.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Together AI",
+    "gpu": "H100 SXM",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 1.99,
+    "listing": "preemptible HGX H100",
+    "source_url": "https://www.together.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Together AI",
+    "gpu": "H200",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 2.99,
+    "listing": "preemptible HGX H200",
+    "source_url": "https://www.together.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Together AI",
+    "gpu": "B200",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 4.09,
+    "listing": "preemptible HGX B200",
+    "source_url": "https://www.together.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Nebius",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 5.4,
+    "listing": "on-demand",
+    "source_url": "https://nebius.com/prices",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Nebius",
+    "gpu": "B200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 8.5,
+    "listing": "on-demand",
+    "source_url": "https://nebius.com/prices",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Nebius",
+    "gpu": "L40S",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.55,
+    "listing": "from, Intel CPU configuration",
+    "source_url": "https://nebius.com/prices",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "DigitalOcean",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 4.41,
+    "listing": "HGX H100 GPU Droplet",
+    "source_url": "https://www.digitalocean.com/pricing/gpu-droplets",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "DigitalOcean",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 4.47,
+    "listing": "HGX H200 GPU Droplet",
+    "source_url": "https://www.digitalocean.com/pricing/gpu-droplets",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "DigitalOcean",
+    "gpu": "L40S",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.57,
+    "listing": "GPU Droplet",
+    "source_url": "https://www.digitalocean.com/pricing/gpu-droplets",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Hyperstack",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.2,
+    "listing": "on-demand",
+    "source_url": "https://www.hyperstack.cloud/gpu-pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Hyperstack",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.99,
+    "listing": "H200 SXM, on-demand",
+    "source_url": "https://www.hyperstack.cloud/gpu-pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Hyperstack",
+    "gpu": "B200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 6.0,
+    "listing": "on-demand",
+    "source_url": "https://www.hyperstack.cloud/gpu-pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Hyperstack",
+    "gpu": "A100 80GB",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.35,
+    "listing": "A100 80GB PCIe, on-demand (SXM: $1.60)",
+    "source_url": "https://www.hyperstack.cloud/gpu-pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Hyperstack",
+    "gpu": "A100 80GB",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 1.08,
+    "listing": "spot",
+    "source_url": "https://www.hyperstack.cloud/gpu-pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Thunder Compute",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.2,
+    "listing": "GPU instance",
+    "source_url": "https://www.thundercompute.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Thunder Compute",
+    "gpu": "A100 80GB",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.09,
+    "listing": "GPU instance",
+    "source_url": "https://www.thundercompute.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "JarvisLabs",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.49,
+    "listing": "on-demand",
+    "source_url": "https://jarvislabs.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "JarvisLabs",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 4.59,
+    "listing": "H200 SXM, on-demand",
+    "source_url": "https://jarvislabs.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "JarvisLabs",
+    "gpu": "A100 80GB",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.49,
+    "listing": "on-demand",
+    "source_url": "https://jarvislabs.ai/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 4.606,
+    "listing": "H100 SXM5 instance",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 6.006,
+    "listing": "H200 SXM5 instance",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "B200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 8.523,
+    "listing": "B200 SXM6 instance",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "A100 80GB",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 2.16,
+    "listing": "A100 SXM4 80GB instance",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "L40S",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.827,
+    "listing": "instance",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "H100 SXM",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 2.303,
+    "listing": "spot",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "H200",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 3.003,
+    "listing": "spot",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "B200",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 4.262,
+    "listing": "spot",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "A100 80GB",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 1.08,
+    "listing": "spot",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Verda (DataCrunch)",
+    "gpu": "L40S",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 0.9135,
+    "listing": "spot",
+    "source_url": "https://verda.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Massed Compute",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.14,
+    "listing": "H100 SXM5, x1",
+    "source_url": "https://vm.massedcompute.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Massed Compute",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.62,
+    "listing": "H200 NVL, x1",
+    "source_url": "https://vm.massedcompute.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Massed Compute",
+    "gpu": "A100 80GB",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.35,
+    "listing": "A100 80GB, x1",
+    "source_url": "https://vm.massedcompute.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Massed Compute",
+    "gpu": "L40S",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 0.97,
+    "listing": "x1",
+    "source_url": "https://vm.massedcompute.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Oblivus",
+    "gpu": "H100 SXM",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 4.31,
+    "listing": "H100 80GB SXM5",
+    "source_url": "https://www.oblivus.com/pricing/",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Oblivus",
+    "gpu": "H100 PCIe",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.5,
+    "listing": "H100 80GB PCIe",
+    "source_url": "https://www.oblivus.com/pricing/",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Oblivus",
+    "gpu": "H200",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 3.99,
+    "listing": "H200 141GB SXM5",
+    "source_url": "https://www.oblivus.com/pricing/",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Oblivus",
+    "gpu": "A100 80GB",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 1.47,
+    "listing": "A100 80GB PCIe",
+    "source_url": "https://www.oblivus.com/pricing/",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Oblivus",
+    "gpu": "RTX 4090",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 0.64,
+    "listing": "on-demand",
+    "source_url": "https://www.oblivus.com/pricing/",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "CloudRift",
+    "gpu": "RTX 4090",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 0.39,
+    "listing": "on-demand",
+    "source_url": "https://www.cloudrift.ai/gpu-rentals",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "CloudRift",
+    "gpu": "RTX 5090",
+    "offer": "on-demand",
+    "price_usd_per_gpu_hour": 0.65,
+    "listing": "on-demand",
+    "source_url": "https://www.cloudrift.ai/gpu-rentals",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Salad",
+    "gpu": "RTX 4090",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 0.16,
+    "listing": "distributed, lowest (batch) priority; high priority $0.330",
+    "source_url": "https://salad.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Salad",
+    "gpu": "RTX 5090",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 0.25,
+    "listing": "distributed, lowest (batch) priority; high priority $0.500",
+    "source_url": "https://salad.com/pricing",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "Lium",
+    "gpu": "RTX 4090",
+    "offer": "spot-community",
+    "price_usd_per_gpu_hour": 0.65,
+    "listing": "marketplace, lowest live ask",
+    "source_url": "https://lium.io/gpu/rtx-4090",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "AWS",
+    "gpu": "H100 SXM",
+    "offer": "reserved-capacity-block",
+    "price_usd_per_gpu_hour": 5.97,
+    "listing": "p5.48xlarge Capacity Block, US East (N. Virginia), $47.757 / 8",
+    "source_url": "https://aws.amazon.com/ec2/capacityblocks/pricing/",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "AWS",
+    "gpu": "H200",
+    "offer": "reserved-capacity-block",
+    "price_usd_per_gpu_hour": 6.866,
+    "listing": "p5e.48xlarge Capacity Block, US East (Ohio), $54.924 / 8",
+    "source_url": "https://aws.amazon.com/ec2/capacityblocks/pricing/",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "AWS",
+    "gpu": "B200",
+    "offer": "reserved-capacity-block",
+    "price_usd_per_gpu_hour": 14.208,
+    "listing": "p6-b200.48xlarge Capacity Block, US East (N. Virginia), $113.666 / 8",
+    "source_url": "https://aws.amazon.com/ec2/capacityblocks/pricing/",
+    "retrieved": "2026-10-26"
+  },
+  {
+    "provider": "AWS",
+    "gpu": "A100 80GB",
+    "offer": "reserved-capacity-block",
+    "price_usd_per_gpu_hour": 2.546,
+    "listing": "p4de.24xlarge Capacity Block, US East (N. Virginia), $20.369 / 8",
+    "source_url": "https://aws.amazon.com/ec2/capacityblocks/pricing/",
+    "retrieved": "2026-10-26"
+  }
+]

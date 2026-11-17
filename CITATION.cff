@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "GPU Rental Price Report, November 2026"
+abstract: >-
+  Public list prices for renting NVIDIA H100, H200, B200, A100 80GB, L40S,
+  RTX 4090 and RTX 5090 GPUs across 16 cloud providers, normalized to USD per
+  GPU-hour and read on 2026-10-26, with per-GPU medians and spreads.
+authors:
+  - name: "EverXCloud Inc."
+    website: "https://everxcloud.ai"
+version: "2026.11"
+date-released: 2026-11-17
+url: "https://everxcloud.ai/en/reports/gpu-rental-price-report-2026-11"
+license: CC-BY-4.0
+keywords:
+  - gpu
+  - cloud computing
+  - pricing
+  - h100
+  - b200
+  - ai infrastructure

@@ -1,0 +1,21 @@
+gpu,offer,providers,min_usd_per_gpu_hour,median_usd_per_gpu_hour,max_usd_per_gpu_hour,spread_max_over_min
+H100 SXM,on-demand,11,3.14,3.99,6.155,1.960
+H100 PCIe,on-demand,3,2.89,3.29,3.5,1.211
+H200,on-demand,10,3.62,4.94,6.305,1.742
+B200,on-demand,7,6.0,8.19,8.6,1.433
+A100 80GB,on-demand,9,1.09,1.49,2.79,2.560
+L40S,on-demand,6,0.97,1.56,2.25,2.320
+RTX 4090,on-demand,3,0.39,0.64,0.89,2.282
+RTX 5090,on-demand,2,0.65,0.92,1.19,1.831
+H100 SXM,spot-community,3,1.99,2.303,2.69,1.352
+H100 PCIe,spot-community,1,1.99,1.99,1.99,1.000
+H200,spot-community,3,2.99,3.003,3.59,1.201
+B200,spot-community,3,4.09,4.262,5.98,1.462
+A100 80GB,spot-community,3,1.08,1.08,1.19,1.102
+L40S,spot-community,2,0.79,0.85175,0.9135,1.156
+RTX 4090,spot-community,3,0.16,0.34,0.65,4.062
+RTX 5090,spot-community,2,0.25,0.47,0.69,2.760
+H100 SXM,reserved-capacity-block,1,5.97,5.97,5.97,1.000
+H200,reserved-capacity-block,1,6.866,6.866,6.866,1.000
+B200,reserved-capacity-block,1,14.208,14.208,14.208,1.000
+A100 80GB,reserved-capacity-block,1,2.546,2.546,2.546,1.000
