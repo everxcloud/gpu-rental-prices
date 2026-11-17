@@ -1,0 +1,76 @@
+provider,gpu,offer,price_usd_per_gpu_hour,listing,source_url,retrieved
+Runpod,H100 SXM,on-demand,4.39,Secure Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,H100 PCIe,on-demand,2.89,Secure Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,H200,on-demand,5.29,Secure Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,B200,on-demand,7.99,Secure Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,A100 80GB,on-demand,2.09,"Secure Cloud, PCIe (cheapest; SXM: $2.19)",https://www.runpod.io/pricing,2026-11-17
+Runpod,L40S,on-demand,1.09,Secure Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,RTX 4090,on-demand,0.89,Secure Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,RTX 5090,on-demand,1.39,Secure Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,H100 SXM,spot-community,2.69,Community Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,H100 PCIe,spot-community,1.99,Community Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,H200,spot-community,3.59,Community Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,B200,spot-community,5.98,Community Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,A100 80GB,spot-community,1.19,"Community Cloud, PCIe",https://www.runpod.io/pricing,2026-11-17
+Runpod,L40S,spot-community,0.79,Community Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,RTX 4090,spot-community,0.34,Community Cloud,https://www.runpod.io/pricing,2026-11-17
+Runpod,RTX 5090,spot-community,0.69,Community Cloud,https://www.runpod.io/pricing,2026-11-17
+Lambda,H100 SXM,on-demand,4.59,"8x instance, per GPU (1x: $4.89)",https://lambda.ai/pricing,2026-11-17
+Lambda,H100 PCIe,on-demand,3.79,1x instance,https://lambda.ai/pricing,2026-11-17
+Lambda,B200,on-demand,7.69,"8x instance, per GPU (1x: $7.99)",https://lambda.ai/pricing,2026-11-17
+Lambda,A100 80GB,on-demand,3.19,"8x SXM instance, per GPU",https://lambda.ai/pricing,2026-11-17
+CoreWeave,H100 SXM,on-demand,6.155,"HGX H100, 8x instance $49.24 / 8, North America",https://www.coreweave.com/pricing,2026-11-17
+CoreWeave,H200,on-demand,6.305,"HGX H200, 8x instance $50.44 / 8, North America",https://www.coreweave.com/pricing,2026-11-17
+CoreWeave,B200,on-demand,8.6,"HGX B200, 8x instance $68.80 / 8, North America",https://www.coreweave.com/pricing,2026-11-17
+CoreWeave,A100 80GB,on-demand,2.7,"8x instance $21.60 / 8, North America",https://www.coreweave.com/pricing,2026-11-17
+CoreWeave,L40S,on-demand,2.25,"8x instance $18.00 / 8, North America",https://www.coreweave.com/pricing,2026-11-17
+Together AI,H100 SXM,on-demand,3.99,"HGX H100 GPU cluster, pay as you go",https://www.together.ai/pricing,2026-11-17
+Together AI,H200,on-demand,5.99,"HGX H200 GPU cluster, pay as you go",https://www.together.ai/pricing,2026-11-17
+Together AI,B200,on-demand,9.29,"HGX B200 GPU cluster, pay as you go",https://www.together.ai/pricing,2026-11-17
+Together AI,H100 SXM,spot-community,1.99,preemptible HGX H100,https://www.together.ai/pricing,2026-11-17
+Together AI,H200,spot-community,2.99,preemptible HGX H200,https://www.together.ai/pricing,2026-11-17
+Together AI,B200,spot-community,4.65,preemptible HGX B200,https://www.together.ai/pricing,2026-11-17
+Nebius,H200,on-demand,5.4,on-demand,https://nebius.com/prices,2026-11-17
+Nebius,B200,on-demand,8.5,on-demand,https://nebius.com/prices,2026-11-17
+Nebius,L40S,on-demand,1.55,"from, Intel CPU configuration",https://nebius.com/prices,2026-11-17
+DigitalOcean,H100 SXM,on-demand,4.41,HGX H100 GPU Droplet,https://www.digitalocean.com/pricing/gpu-droplets,2026-11-17
+DigitalOcean,H200,on-demand,4.47,HGX H200 GPU Droplet,https://www.digitalocean.com/pricing/gpu-droplets,2026-11-17
+DigitalOcean,L40S,on-demand,1.57,GPU Droplet,https://www.digitalocean.com/pricing/gpu-droplets,2026-11-17
+Hyperstack,H100 SXM,on-demand,3.2,on-demand,https://www.hyperstack.cloud/gpu-pricing,2026-11-17
+Hyperstack,H200,on-demand,3.99,"H200 SXM, on-demand",https://www.hyperstack.cloud/gpu-pricing,2026-11-17
+Hyperstack,B200,on-demand,6,on-demand,https://www.hyperstack.cloud/gpu-pricing,2026-11-17
+Hyperstack,A100 80GB,on-demand,1.35,"A100 80GB PCIe, on-demand (SXM: $1.60)",https://www.hyperstack.cloud/gpu-pricing,2026-11-17
+Hyperstack,A100 80GB,spot-community,1.08,spot,https://www.hyperstack.cloud/gpu-pricing,2026-11-17
+Thunder Compute,H100 SXM,on-demand,3.2,GPU instance,https://www.thundercompute.com/pricing,2026-11-17
+Thunder Compute,A100 80GB,on-demand,1.09,GPU instance,https://www.thundercompute.com/pricing,2026-11-17
+JarvisLabs,H100 SXM,on-demand,3.49,on-demand,https://jarvislabs.ai/pricing,2026-11-17
+JarvisLabs,H200,on-demand,4.59,"H200 SXM, on-demand",https://jarvislabs.ai/pricing,2026-11-17
+JarvisLabs,A100 80GB,on-demand,1.49,on-demand,https://jarvislabs.ai/pricing,2026-11-17
+Verda (DataCrunch),H100 SXM,on-demand,5.346,H100 SXM5 instance,https://verda.com/pricing,2026-11-17
+Verda (DataCrunch),H200,on-demand,6.836,H200 SXM5 instance,https://verda.com/pricing,2026-11-17
+Verda (DataCrunch),B200,on-demand,9.699,B200 SXM6 instance,https://verda.com/pricing,2026-11-17
+Verda (DataCrunch),A100 80GB,on-demand,2.41,A100 SXM4 80GB instance,https://verda.com/pricing,2026-11-17
+Verda (DataCrunch),L40S,on-demand,2.058,instance,https://verda.com/pricing,2026-11-17
+Verda (DataCrunch),H100 SXM,spot-community,2.673,spot,https://verda.com/pricing,2026-11-17
+Verda (DataCrunch),H200,spot-community,3.418,spot,https://verda.com/pricing,2026-11-17
+Verda (DataCrunch),B200,spot-community,4.85,spot,https://verda.com/pricing,2026-11-17
+Verda (DataCrunch),A100 80GB,spot-community,1.205,spot,https://verda.com/pricing,2026-11-17
+Verda (DataCrunch),L40S,spot-community,1.029,spot,https://verda.com/pricing,2026-11-17
+Massed Compute,H100 SXM,on-demand,3.14,"H100 SXM5, x1",https://vm.massedcompute.com/pricing,2026-11-17
+Massed Compute,H200,on-demand,3.62,"H200 NVL, x1",https://vm.massedcompute.com/pricing,2026-11-17
+Massed Compute,A100 80GB,on-demand,1.35,"A100 80GB, x1",https://vm.massedcompute.com/pricing,2026-11-17
+Massed Compute,L40S,on-demand,0.97,x1,https://vm.massedcompute.com/pricing,2026-11-17
+Oblivus,H100 SXM,on-demand,4.312,H100 80GB SXM5,https://www.oblivus.com/pricing/,2026-11-17
+Oblivus,H100 PCIe,on-demand,3.5,H100 80GB PCIe,https://www.oblivus.com/pricing/,2026-11-17
+Oblivus,H200,on-demand,3.99,H200 141GB SXM5,https://www.oblivus.com/pricing/,2026-11-17
+Oblivus,A100 80GB,on-demand,1.47,A100 80GB PCIe,https://www.oblivus.com/pricing/,2026-11-17
+Oblivus,RTX 4090,on-demand,0.64,on-demand,https://www.oblivus.com/pricing/,2026-11-17
+CloudRift,RTX 4090,on-demand,0.39,on-demand,https://www.cloudrift.ai/gpu-rentals,2026-11-17
+CloudRift,RTX 5090,on-demand,0.6,on-demand,https://www.cloudrift.ai/gpu-rentals,2026-11-17
+Salad,RTX 4090,spot-community,0.16,"distributed, lowest (batch) priority; high priority $0.440",https://salad.com/pricing,2026-11-17
+Salad,RTX 5090,spot-community,0.25,"distributed, lowest (batch) priority; high priority $0.600",https://salad.com/pricing,2026-11-17
+Lium,RTX 4090,spot-community,0.35,"marketplace, lowest live ask",https://lium.io/gpu/rtx-4090,2026-11-17
+AWS,H100 SXM,reserved-capacity-block,5.97,"p5.48xlarge Capacity Block, US East (N. Virginia), $47.757 / 8",https://aws.amazon.com/ec2/capacityblocks/pricing/,2026-11-17
+AWS,H200,reserved-capacity-block,6.866,"p5e.48xlarge Capacity Block, US East (Ohio), $54.924 / 8",https://aws.amazon.com/ec2/capacityblocks/pricing/,2026-11-17
+AWS,B200,reserved-capacity-block,14.208,"p6-b200.48xlarge Capacity Block, US East (N. Virginia), $113.666 / 8",https://aws.amazon.com/ec2/capacityblocks/pricing/,2026-11-17
+AWS,A100 80GB,reserved-capacity-block,2.546,"p4de.24xlarge Capacity Block, US East (N. Virginia), $20.369 / 8",https://aws.amazon.com/ec2/capacityblocks/pricing/,2026-11-17
