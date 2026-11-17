@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Integrity check for the GPU rental price dataset (Python standard library only).
 
-Verifies the price CSV (row count, columns, values), that the JSON file holds the same
-rows, and that the summary CSV matches statistics recomputed from the price rows.
-Exits with status 1 if any check fails.
+Checks every monthly edition in data/ (gpu_rental_prices_YYYY_MM.csv, .json and
+summary_YYYY_MM.csv): the price CSV (columns, values), that the JSON file holds the same
+rows, and that the summary CSV matches statistics recomputed from the price rows. Pass
+one or more editions (YYYY_MM) as arguments to check only those. Exits with status 1 if
+any check fails.
 """
 
 from __future__ import annotations
@@ -11,17 +13,16 @@ from __future__ import annotations
 import csv
 import json
 import math
+import re
 import sys
 from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-PRICES_CSV = ROOT / "data" / "gpu_rental_prices_2026_11.csv"
-PRICES_JSON = ROOT / "data" / "gpu_rental_prices_2026_11.json"
-SUMMARY_CSV = ROOT / "data" / "summary_2026_11.csv"
-
-EXPECTED_ROWS = 75
-RETRIEVED = "2026-10-26"
+DATA = ROOT / "data"
+EDITION_RE = re.compile(r"gpu_rental_prices_(\d{4}_(?:0[1-9]|1[0-2]))\.csv$")
+FIRST_EDITION = "2026_11"
+FIRST_EDITION_ROWS = 75
 PRICE_COLUMNS = [
     "provider",
     "gpu",
@@ -66,12 +67,22 @@ def median(values: list[float]) -> float:
     return (ordered[middle - 1] + ordered[middle]) / 2
 
 
-def check_prices() -> list[dict[str, object]]:
-    columns, rows = read_csv(PRICES_CSV)
+def edition_files(edition: str) -> tuple[Path, Path, Path]:
+    return (
+        DATA / f"gpu_rental_prices_{edition}.csv",
+        DATA / f"gpu_rental_prices_{edition}.json",
+        DATA / f"summary_{edition}.csv",
+    )
+
+
+def check_prices(edition: str) -> list[dict[str, object]]:
+    columns, rows = read_csv(edition_files(edition)[0])
     if columns != PRICE_COLUMNS:
         fail(f"price CSV columns {columns} != {PRICE_COLUMNS}")
-    if len(rows) != EXPECTED_ROWS:
-        fail(f"price CSV has {len(rows)} rows, expected {EXPECTED_ROWS}")
+    if not rows:
+        fail("price CSV has no rows")
+    if edition == FIRST_EDITION and len(rows) != FIRST_EDITION_ROWS:
+        fail(f"price CSV has {len(rows)} rows, expected {FIRST_EDITION_ROWS}")
 
     records: list[dict[str, object]] = []
     seen: set[tuple[str, str, str]] = set()
@@ -100,18 +111,17 @@ def check_prices() -> list[dict[str, object]]:
             fail(f"line {line}: source URL {row['source_url']!r} is not HTTPS")
         if sources.setdefault(row["provider"], row["source_url"]) != row["source_url"]:
             fail(f"line {line}: provider {row['provider']} has more than one source URL")
-        if row["retrieved"] != RETRIEVED:
-            fail(f"line {line}: retrieved {row['retrieved']!r} != {RETRIEVED}")
         try:
-            date.fromisoformat(row["retrieved"])
+            if date.fromisoformat(row["retrieved"]) > date.today():
+                fail(f"line {line}: retrieved {row['retrieved']!r} is in the future")
         except ValueError:
             fail(f"line {line}: retrieved {row['retrieved']!r} is not an ISO date")
         records.append({**row, "price_usd_per_gpu_hour": price})
     return records
 
 
-def check_json(records: list[dict[str, object]]) -> None:
-    data = json.loads(PRICES_JSON.read_text(encoding="utf-8"))
+def check_json(edition: str, records: list[dict[str, object]]) -> None:
+    data = json.loads(edition_files(edition)[1].read_text(encoding="utf-8"))
     if not isinstance(data, list):
         fail("JSON file is not an array")
         return
@@ -152,8 +162,8 @@ def expected_summary(records: list[dict[str, object]]) -> list[dict[str, object]
     return summary
 
 
-def check_summary(records: list[dict[str, object]]) -> None:
-    columns, rows = read_csv(SUMMARY_CSV)
+def check_summary(edition: str, records: list[dict[str, object]]) -> None:
+    columns, rows = read_csv(edition_files(edition)[2])
     if columns != SUMMARY_COLUMNS:
         fail(f"summary columns {columns} != {SUMMARY_COLUMNS}")
     expected = expected_summary(records)
@@ -180,23 +190,52 @@ def check_summary(records: list[dict[str, object]]) -> None:
             fail(f"{label}: {error}")
 
 
-def main() -> int:
-    for path in (PRICES_CSV, PRICES_JSON, SUMMARY_CSV):
-        if not path.is_file():
-            print(f"FAIL: missing {path.relative_to(ROOT)}")
-            return 1
-    records = check_prices()
-    check_json(records)
-    check_summary(records)
-    if errors:
-        for message in errors:
-            print(f"FAIL: {message}")
-        print(f"{len(errors)} error(s)")
+def editions() -> list[str]:
+    return sorted(m.group(1) for p in DATA.glob("*.csv") if (m := EDITION_RE.search(p.name)))
+
+
+def check_edition(edition: str) -> list[dict[str, object]] | None:
+    missing = [p for p in edition_files(edition) if not p.is_file()]
+    if missing:
+        fail(f"missing {', '.join(str(p.relative_to(ROOT)) for p in missing)}")
+        return None
+    records = check_prices(edition)
+    check_json(edition, records)
+    check_summary(edition, records)
+    return records
+
+
+def main(argv: list[str]) -> int:
+    global errors
+    selected = argv or editions()
+    if not selected:
+        print(f"FAIL: no gpu_rental_prices_YYYY_MM.csv in {DATA.relative_to(ROOT)}")
         return 1
-    providers = len({r["provider"] for r in records})
-    print(f"OK: {len(records)} price rows, {providers} providers, summary and JSON consistent")
+    failed = 0
+    for edition in selected:
+        errors = []
+        if not EDITION_RE.search(f"gpu_rental_prices_{edition}.csv"):
+            fail("edition must be YYYY_MM")
+            records = None
+        else:
+            records = check_edition(edition)
+        if errors:
+            failed += len(errors)
+            for message in errors:
+                print(f"FAIL [{edition}]: {message}")
+            continue
+        if records is None:
+            continue
+        providers = len({r["provider"] for r in records})
+        print(
+            f"OK [{edition}]: {len(records)} price rows, {providers} providers, "
+            "summary and JSON consistent"
+        )
+    if failed:
+        print(f"{failed} error(s)")
+        return 1
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(sys.argv[1:]))

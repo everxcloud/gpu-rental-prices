@@ -67,7 +67,8 @@ Spot, preemptible and community statistics, and the AWS Capacity Block prices, a
 | `data/gpu_rental_prices_2026_11.csv` | 75 price rows, one per provider, GPU and offer type. Byte-identical to the CSV published with the report. |
 | `data/gpu_rental_prices_2026_11.json` | The same 75 rows as a JSON array, with prices as numbers. |
 | `data/summary_2026_11.csv` | Statistics per GPU and offer type, computed from the price rows. |
-| `scripts/check.py` | Integrity check (Python standard library only): row count, columns, values and summary consistency. |
+| `scripts/check.py` | Integrity check (Python standard library only) of every edition: columns, values, JSON and summary consistency. |
+| `scripts/refresh.py` | Monthly refresher: re-reads each provider's pricing page and writes the next edition (standard library only). |
 | `CITATION.cff` | Citation metadata. |
 | `LICENSE` | Creative Commons Attribution 4.0 International legal code. |
 
@@ -148,6 +149,19 @@ Run `python3 scripts/check.py` to verify the files.
 ## Update cadence
 
 Monthly. Each edition is published as new dated files (`*_YYYY_MM.csv`); earlier editions are kept unchanged.
+
+On the 1st of each month at 06:00 UTC, the [`Monthly price refresh`](.github/workflows/monthly-refresh.yml) workflow re-reads every source URL with `scripts/refresh.py`, writes the new edition (price CSV, JSON and summary), runs `scripts/check.py` and opens a pull request. Nothing is published automatically: a maintainer checks the pull request before merging. Its description lists:
+
+- every price that changed, with the previous value and the change in percent (changes above 50% are flagged);
+- every unreadable row, with the reason. The refresher never guesses a price: when a page cannot be fetched or a price cannot be located unambiguously, the row keeps its previous price, listing and `retrieved` date, so `retrieved` always shows when a value was last read.
+
+To preview a refresh locally (network access, Python 3.10+ standard library only):
+
+```bash
+python3 scripts/refresh.py                       # print the report, write nothing
+python3 scripts/refresh.py --write --edition 2026_12
+python3 -m unittest discover -s tests            # offline tests
+```
 
 ## How to cite
 
