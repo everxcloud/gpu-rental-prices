@@ -26,6 +26,15 @@ configs:
         path: data/summary_2026_11.csv
 ---
 
+<p align="center">
+  <a href="https://everxcloud.ai/?utm_source=github&utm_medium=readme&utm_campaign=brand">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/brand/everxcloud-logo-on-dark.svg">
+      <img src="assets/brand/everxcloud-logo-on-light.svg" alt="EverXCloud: Every GPU. One provider." width="420">
+    </picture>
+  </a>
+</p>
+
 # EverXCloud GPU Rental Price Report, November 2026
 
 Public list prices for renting NVIDIA data center and consumer GPUs in the cloud, normalized to USD per GPU-hour. The dataset contains 75 prices for eight GPUs (H100 SXM, H100 PCIe, H200, B200, A100 80GB, L40S, RTX 4090 and RTX 5090) across 16 cloud providers, read on 2026-10-26 from each provider's official pricing page. Every row records the provider, the GPU, the offer type, the price, the exact listing used and the source URL, so each figure can be traced and checked. A per-GPU summary gives the number of providers, minimum, median, maximum and spread for each offer type.
